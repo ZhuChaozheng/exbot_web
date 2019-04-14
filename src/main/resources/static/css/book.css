@@ -1,0 +1,321 @@
+.exbot-index-all-book .module-wrap {
+	background: #fff;
+	min-width: 1000px;
+	overflow: hidden
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-title {
+	text-align: center;
+	font-size: 24px;
+	color: #373d41;
+	line-height: 36px
+}
+
+.exbot-index-all-book .module-wrap .exbot-index-promotion-container {
+	text-align: center;
+}
+
+.exbot-index-all-book .module-wrap .exbot-index-promotion-container .exbot-index-promotion {
+	display: inline-block;
+    width: 20%;
+}
+
+.exbot-index-all-book .module-wrap .exbot-index-promotion-container .exbot-index-promotion .exbot-book-logo-1 {
+	width: 80px;
+	margin: 6px auto 8px
+}
+
+.exbot-index-all-book .module-wrap .exbot-index-promotion-container .exbot-index-promotion .exbot-book-logo-2 {
+	width: 135px;
+	margin: 6px auto 8px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer {
+	max-height: 1000px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer a {
+	text-decoration: none;
+	color: inherit
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer a a:focus,
+	.exbot-index-all-book .module-wrap .exbot-book-layer a a:hover,
+	.exbot-index-all-book .module-wrap .exbot-book-layer a a:visited {
+	color: inherit
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs
+	{
+	text-align: center;
+	position: relative;
+	min-width: 1000px;
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab
+	{
+	float: left;
+	padding: 15px 39px;
+	width: 20%;
+	box-sizing: border-box
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab a
+	{
+	display: block;
+	text-decoration: none;
+	color: #373d41
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab a:hover
+	{
+	color: #00c1de
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab a .exbot-book-icon
+	{
+	width: 100px;
+	height: 120px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab a .exbot-book-name
+	{
+	margin-top:8px;
+	font-size: 14px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab.active .exbot-book-name
+	{
+	color: #00c1de
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .exbot-book-tab.active ~.indicator-triangle {
+	display: block
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-tabs .indicator-triangle
+	{
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 8px solid #f5f5f6;
+	transition: left .1s linear;
+	display: none
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container
+	{
+	background: #f5f5f6;
+	overflow: hidden
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content
+	{
+	width: 1200px;
+	height:220px;
+	margin: 0 250px;
+	overflow: hidden
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content:before
+	{
+	content: "";
+	height: 20px;
+	display: block
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content:after
+	{
+	content: "";
+	height: 20px;
+	display: block;
+	float: left;
+	width: 100%
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item
+	{
+	width: 374px;
+	height: 72px;
+	padding: 12px 20px;
+	margin-left: 0;
+	margin-right: 32px;
+	box-sizing: border-box;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	transition: all .3s ease-in-out
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item .exbot-book-normal-item-name
+	{
+	font-size: 14px;
+	color: #373d41;
+	line-height: 24px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item .exbot-book-normal-item-name img
+	{
+	width: 26px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item .exbot-book-normal-item-description
+	{
+	font-size: 12px;
+	color: #9b9ea0;
+	line-height: 24px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item .exbot-book-normal-item-icon
+	{
+	opacity: 0;
+	position: absolute;
+	right: 12px;
+	top: 30px;
+	transition: all .3s ease-in-out
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item:hover
+	{
+	background: #fff;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15)
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item:hover .exbot-book-normal-item-icon
+	{
+	opacity: 1
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item.right-most
+	{
+	margin-right: 6px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item.left-most
+	{
+	margin-left: 6px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box
+	{
+	width: 55%;
+	height: 360px;
+	float: left;
+	position: relative
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item
+	{
+	width: 600px;
+	margin-bottom: 42px;
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-wrap
+	{
+	display: block;
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-wrap .exbot-book-hot-item-name
+	{
+	font-size: 18px;
+	color: #373d41;
+	line-height: 24px;
+	font-weight: bolder;
+	margin-top: 12px;
+	transition: all .3s ease-in-out
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-wrap .exbot-book-hot-item-name img
+	{
+	width: 26px;
+	vertical-align: 1px
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-wrap .exbot-book-hot-item-description
+	{
+	font-size: 12px;
+	color: #9b9ea0;
+	line-height: 18px;
+	margin-top: 8px
+}
+
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-btn
+	{
+	display: block;
+	width: 96px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #373d41;
+	font-size: 12px;
+	color: #373d41;
+	text-align: center;
+	margin-top: 16px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all .3s ease-in-out
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box .exbot-book-hot-item .exbot-book-hot-item-btn:hover
+	{
+	color: #00c1de;
+	border: 1px solid #00c1de
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-hot-box:after
+	{
+	content: "";
+	position: absolute;
+	background: #d7d8d9;
+	width: 1px;
+	right: 20px;
+	top: 10px;
+	bottom: 10px;
+	display: none
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-box
+	{
+	width: 33.5%;
+	float: left
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-more-layer {
+	display: none;
+	overflow: hidden
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-show-more {
+	display:block;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	margin: 35px auto 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #373d41;
+	border: 1px solid #373d41;
+	cursor: pointer
+}
+
+.exbot-index-all-book .module-wrap .exbot-book-show-more:hover {
+	color: #00c1de;
+	border: 1px solid #00c1de
+}
+
+@media screen and (max-width:1000px) {
+	.exbot-index-all-book .module-wrap .exbot-book-layer .exbot-book-content-container .exbot-book-content .exbot-book-normal-item
+		{
+		margin-right: 0;
+		padding-left: 4px
+	}
+}

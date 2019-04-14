@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:http="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExBot易科机器人实验室的团队博客，涉及包括机器学习、机器视觉、ROS等机器人相关技术">
+    <meta name="author" content="robot,exbot,机器人,机器人小组,易科机器人实验室,机器视觉,智能小车,机器学习,ROS,团队博客">
+    <link rel="icon" href="img/site/favicon.ico">
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="css/amazeui.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/plugs_paging.css">
+
+   <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js">
+    <script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="js/lastUrl.js"></script>
+    <script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+    <script src="css/bootstrap/bootstrap.min.js"></script>
+    <title>ExBot易科机器人实验室 | 致力于机器人技术的创新与分享</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--解决轮播自动播放问题-->
+    <script>
+        $(function(){
+            $('#myCarousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+    <!-- Custom fonts for this template -->
+    <link href="css/font-awesome/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <!-- css for carousel -->
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <!-- css for book -->
+    <link rel="stylesheet" type="text/css" href="css/book.css">
+    <!-- css for community -->
+    <link rel="stylesheet" type="text/css" href="css/community.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!-- test -->
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+<div class="page-layout page-main-content">
+    <!-- 导航栏 -->
+    <div class="header">
+        <div class="am-topbar" style="margin-bottom: 0">
+            <h1 class="am-topbar-brand">
+                <a href="/" class="blogTitleName"><img src="img/site/logo_min.png" class="imgStyle">易科机器人实验室</a>
+            </h1>
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" style="background-color: #CCCCCC;border-color: white;border-radius: 6px" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+            <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav">
+                    <li><a class="top_bar" href="/" style="cursor: pointer;"><span class="fa fa-home"></span>&nbsp;首页</a></li>
+                    <li><a class="top_bar" href="/categories" style="cursor: pointer;"><span class="fa fa-th"></span>&nbsp;分类</a></li>
+                    <li><a class="top_bar" href="categories?category=成果" style="cursor: pointer;"><span class="fa fa-coffee"></span>&nbsp;成果</a></li>
+                    <li><a class="top_bar" href="categories?category=教程" style="cursor: pointer;"><span class="fa fa-coffee"></span>&nbsp;教程</a></li>
+                    <li><a class="top_bar" href="/archives" style="cursor: pointer;"><span class="fa fa-archive"></span>&nbsp;归档</a></li>
+                    <li><a class="top_bar" href="/tags" style="cursor: pointer;"><span class="fa fa-tags"></span>&nbsp;标签</a></li>
+                    <li><a class="top_bar" href="/friendlylink" style="cursor: pointer;"><span class="fa fa-street-view"></span>&nbsp;友链</a></li>
+                    <li><a class="top_bar" href="/aboutme" style="cursor: pointer;"><span class="fa fa-user"></span>&nbsp;关于我们</a> </li>
+                </ul>
+
+                <div class="am-topbar-right" th:if="${#httpServletRequest.remoteUser}">
+                    <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                        <button class="personalSpace am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle><span sec:authentication="name"></span> <span class="am-icon-caret-down"></span></button>
+                        <ul class="am-dropdown-content">
+                            <li><a href="/user" sec:authorize="hasRole('ROLE_USER')">个人主页</a></li>
+                            <li><a href="/superadmin" sec:authorize="hasRole('ROLE_SUPERADMIN')">网站后台管理</a></li>
+
+                            <li><a class="feedbackClick">反馈</a></li>
+                            <hr style="margin: 10px 0 5px 0;">
+                            <li><a th:href="@{/logout}">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+                    <a href="/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">注册</a>
+                </div>
+                <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+                    <a href="/login" class="loginBtn am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">登录</a>
+                </div>
+                <div class="am-topbar-right writing am-hide-md-down">
+                    <a  href="/editor" target="_blank" style="text-decoration: none">
+                        <img class="am-circle" src="https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/writing.png">
+                        <span class="write-word">写博客</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 轮播 -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <!--   <li data-target="#myCarousel" data-slide-to="2"></li>  -->
+        </ol>
+        <!-- content -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="img/lunbo/banner_1.png" alt="First slide">
+            </div>
+            <div class="item">
+                <img class="second-slide" src="img/lunbo/banner_2.png " alt="Second slide">
+            </div>
+
+            <!-- <div class="item">
+               <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+             </div>    -->
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- 书籍 -->
+    <div class="exbot-index-all-book">
+        <div class="module-wrap">
+            <!-- 宗旨 -->
+            <div class="exbot-index-promotion-container">
+                <div class="exbot-index-promotion">
+                    <img class="exbot-book-logo-1" src="img/site/intel.png"><br/>
+                    Intel战略合作与创新联盟
+                </div>
+                <div class="exbot-index-promotion">
+                    <img class="exbot-book-logo-2" src="img/site/ca3ia.png"><br/>
+                    智能服务机器人专业委员会单位
+                </div>
+            </div>
+            <h1 class="exbot-book-title">实验室宗旨——探索、分享、创造</h1>
+            <!-- 书籍 -->
+            <div class="exbot-book-layer">
+                <ul class="exbot-book-tabs" id="ul_book_recommend">
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(180)">
+                        <div><img class="exbot-book-icon" src="img/books/book_1.jpg" alt="机器人操作系统浅析"></div>
+                        <div class="exbot-book-name">机器人操作系统浅析</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(181)">
+                        <div><img class="exbot-book-icon" src="img/books/book_2.jpg" alt="嵌入式机器人学"></div>
+                        <div class="exbot-book-name">嵌入式机器人学</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(182)">
+                        <div><img class="exbot-book-icon" src="img/books/book_3.jpg" alt="机器人与未来"></div>
+                        <div class="exbot-book-name">机器人与未来</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(183)">
+                        <div><img class="exbot-book-icon" src="img/books/book_4.jpg" alt="飞行编队控制"></div>
+                        <div class="exbot-book-name">飞行编队控制</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(184)">
+                        <div><img class="exbot-book-icon" src="img/books/book_5.jpg" alt="ROS机器人程序设计"></div>
+                        <div class="exbot-book-name">ROS机器人程序设计</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(191)">
+                        <div><img class="exbot-book-icon" src="img/books/book_6.jpg" alt="机器人编程实战"></div>
+                        <div class="exbot-book-name">机器人编程实战</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(192)">
+                        <div><img class="exbot-book-icon" src="img/books/book_7.jpg" alt="ROS机器人开发：实用案例分析"></div>
+                        <div class="exbot-book-name">ROS机器人开发：实用案例分析</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(193)">
+                        <div><img class="exbot-book-icon" src="img/books/book_8.jpg" alt="ROS机器人项目开发11例"></div>
+                        <div class="exbot-book-name">ROS机器人项目开发11例</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(194)">
+                        <div><img class="exbot-book-icon" src="img/books/book_9.jpg" alt="ROS机器人高效编程"></div>
+                        <div class="exbot-book-name">ROS机器人高效编程</div>
+                    </a></li>
+                    <li class="exbot-book-tab"><a id="book" onclick="show(this)" href="javascript:bookInfo(195)">
+                        <div><img class="exbot-book-icon" src="img/books/book_10.jpg" alt="TensorFlow深度学习实战"></div>
+                        <div class="exbot-book-name">TensorFlow深度学习实战</div>
+                    </a></li>
+                    <div class="indicator-triangle"></div>
+                </ul>
+                <div class="exbot-book-content-container">
+                    <div class="exbot-book-content" id="book-info" style="display: none;">
+                        <div class="exbot-book-hot-box">
+                            <div class="exbot-book-hot-item">
+                                <div class="exbot-book-hot-item-wrap">
+                                    <div class="exbot-book-hot-item-name" id="book-name"></div>
+                                    <div class="exbot-book-hot-item-description" id="book-description"></div>
+                                </div>
+                                <a id="book-info-link" class="exbot-book-hot-item-btn" target="_blank">阅读本书</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="exbot-book-show-more" href="categories?category=书籍">查看全部</a>
+        </div>
+    </div>
+
+    <!-- 教程 -->
+    <div class="exbot-index-community">
+        <div class="module-wrap">
+            <div class="exbot-index-community">
+                <div class="y-row exbot-main-head">
+                    <a class="index-info" target="_blank" href="categories?category=教程">
+                        大咖云集，知识分享的开发者技术社区
+                    </a>
+                </div>
+                <div class="y-row exbot-main-content clearfix" id="div_item_container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- 项目 -->
+<!--<div class="projects">
+    <h2 class="title">项目</h2>
+
+    <div class="div_projects_container">
+        <ul id="ul_projects">
+
+        </ul>
+    </div>
+</div>-->
+    <!-- 点击图片向左移动 -->
+    <!-- <div class="slide-btn-panel left-btn">
+       <div class="btn-bg"></div>
+       <button class="slide-btn left-btn" id="left-btn">
+         <i class="icon-arrow-left"></i>
+       </button>
+     </div>-->
+    <!-- 点击图片向右移动 -->
+    <!--<div class="slide-btn-panel right-btn">
+    <div class="btn-bg"></div>
+      <button class="slide-btn right-btn" id="right-btn">
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>-->
+
+<!-- 页脚 -->
+<div id="footerPage" class="footer">
+    <div class="exbot-common-footer-2017">
+        <div class="module-wrap">
+            <div class="small-footer">
+                <div class="exbot-copyright-100">
+                    <div class="y-row copyright">
+                        <p class="link-wrap">
+                            <a class="link-item" href="http://www.blackant.org/" target="_blank">黑蚂蚁机器人</a>
+                            <a class="link-item" href="http://www.robobk.com/" target="_blank">机智机器人团队</a>
+                            <a class="link-item" href="http://www.diy-robots.com/" rel="colleague" target="_blank">动力老男孩的博客</a>
+                            <a class="link-item" href="http://blog.csdn.net/hcx25909" rel="friend" target="_blank">古月居</a>
+                            <a class="link-item" href="https://ioteams.com/mechanical">机器革命</a>
+                            <a class="link-item" href="http://zhainan.org/" rel="contact" target="_blank">I'm 宅男</a>
+                            <a class="link-item" href="http://www.yfworld.com/" rel="colleague" target="_blank">云飞机器人实验室</a>
+                            <a class="link-item" href="http://yukunlin.com.cn/">我思故我在</a>
+                            <a class="link-item" href="http://www.csksoft.net/blog/" rel="colleague" target="_blank">CSK.Blog</a>
+                            <a class="link-item" href="http://blog.exbot.net/link" title="友情链接">更多链接</a>
+                        </p>
+                        <p id="copyright" class="copyright">
+                             © 2019 ExBot易科机器人实验室 保留所有权利.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="float-tool">
+                <div class="module-wrap">
+                    <div id="goTop" style="display: none;">
+                        <img style="width: 39px;" src="img/site/goTop.png" onclick="goTop()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Custom scripts for this template -->
+<script type="text/javascript" src="js/host.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

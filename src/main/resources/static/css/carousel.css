@@ -1,0 +1,20 @@
+/* 轮播底部 */
+.carousel {
+  height: 450px;
+}
+/* 轮播描述 */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* 轮播项目 */
+.carousel .item {
+  height: 450px;
+  background-color: #777;
+  overflow:hidden;
+}
+.carousel-inner > .item > img {
+  margin:0 auto;
+  min-height:450px;
+  _height:expression(this.height < 450 ? "450px" : this.height);
+}

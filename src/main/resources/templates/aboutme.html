@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:http="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>ExBot易科机器人实验室 | 关于我们</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="robot,exbot,机器人,机器人小组,易科机器人实验室,机器视觉,智能小车,机器学习,ROS,团队博客">
+    <meta name="description" content="ExBot易科机器人实验室的团队博客，涉及包括机器学习、机器视觉、ROS等机器人相关技术">
+
+    <link rel="icon" type="image/x-icon" href="img/site/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/aboutmetimeline.css">
+    <link href="https://cdn.bootcss.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <div class="header">
+        <div class="am-topbar" style="margin-bottom: 0">
+            <h1 class="am-topbar-brand">
+                <a href="/" class="blogTitleName"><img src="img/site/logo_min.png" class="imgStyle">易科机器人实验室</a>
+            </h1>
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" style="background-color: #CCCCCC;border-color: white;border-radius: 6px" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+            <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav">
+                    <li><a class="top_bar" href="/" style="cursor: pointer;"><span class="fa fa-home"></span>&nbsp;首页</a></li>
+                    <li><a class="top_bar" href="/categories" style="cursor: pointer;"><span class="fa fa-th"></span>&nbsp;分类</a></li>
+                    <li><a class="top_bar" href="categories?category=成果" style="cursor: pointer;"><span class="fa fa-coffee"></span>&nbsp;成果</a></li>
+                    <li><a class="top_bar" href="categories?category=教程" style="cursor: pointer;"><span class="fa fa-coffee"></span>&nbsp;教程</a></li>
+                    <li><a class="top_bar" href="/archives" style="cursor: pointer;"><span class="fa fa-archive"></span>&nbsp;归档</a></li>
+                    <li><a class="top_bar" href="/tags" style="cursor: pointer;"><span class="fa fa-tags"></span>&nbsp;标签</a></li>
+                    <li><a class="top_bar" href="/friendlylink" style="cursor: pointer;"><span class="fa fa-street-view"></span>&nbsp;友链</a></li>
+                    <li><a class="top_bar" href="/aboutme" style="cursor: pointer;"><span class="fa fa-user"></span>&nbsp;关于我们</a> </li>
+                </ul>
+
+                <div class="am-topbar-right" th:if="${#httpServletRequest.remoteUser}">
+                    <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                        <button class="personalSpace am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle><span sec:authentication="name"></span> <span class="am-icon-caret-down"></span></button>
+                        <ul class="am-dropdown-content">
+                            <li><a href="/user" sec:authorize="hasRole('ROLE_USER')">个人主页</a></li>
+                            <li><a href="/superadmin" sec:authorize="hasRole('ROLE_SUPERADMIN')">网站后台管理</a></li>
+
+                            <li><a class="feedbackClick">反馈</a></li>
+                            <hr style="margin: 10px 0 5px 0;">
+                            <li><a th:href="@{/logout}">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+                    <a href="/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">注册</a>
+                </div>
+                <div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+                    <a href="/login" class="loginBtn am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">登录</a>
+                </div>
+                <div class="am-topbar-right writing am-hide-md-down">
+                    <a  href="/editor" target="_blank" style="text-decoration: none">
+                        <img class="am-circle" src="https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/writing.png">
+                        <span class="write-word">写博客</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="am-container">
+            <div class="am-g">
+                <div class="am-u-sm-12 am-u-lg-12">
+                    <div id="wordsView">
+                        <div class="title">
+                            <div class="title-words">
+                                <h1 class="title-words-h1">关于我们</h1>
+                            </div>
+
+                            <div class="single-main">
+                                <p><strong><span style="font-size: large;">WHO WE ARE</span></strong></p>
+                                <hr>
+                                <p><!--StartFragment --></p>
+                                <p>易科机器人实验室(ExBot&nbsp;Robotics&nbsp;Lab)，是由智能移动机器人开发者精英自发组建的开放、开源、协作组织，致力于机器人技术的创新与分享。理念是&nbsp;“学习、创造、分享”，并通过易科机器人社区分享知识以及进行团队协作，相互激发创造力。</p>
+                                <p><strong>服务宗旨</strong></p>
+                                <p>服务于机器人开发者，致力于先进技术的探索与分享！</p>
+                                <p>&nbsp;</p>
+                                <p><strong>历史沿革</strong></p>
+                                <p>易科机器人实验室(ExBot&nbsp;Robotics&nbsp;Lab)成立于2010年5月1日。</p>
+                                <p>在实践领域，ExBot致力于地面视觉导航机器人和空中机器人建设。先后推出了ExBot&nbsp;Xi导航机器人平台(主要贡献者：Yuanbo&nbsp;She、FuQiang Liu)和ROS四旋翼平台(主要贡献者：Top、Poyoten、西工大一小学生、LX)，并被多所高校机器人实验室所采用。并为广大ROS开发者制作了快捷高效的ROS定制版光盘（hydro by Yuanbo She, indigo by Poyoten）。为ROS爱好者撰写吐槽系列（老王），为四旋翼爱好者编辑精选文献系列（Top），翻译了ROS教程（Bobsweetie）以及其他各类原创教程（Yuanbo&nbsp;She、Poyoten、FuQiang&nbsp;Liu、西工大一小学生、Shike&nbsp;Long等，专题作者持续增加中）。</p>
+                                <p>在理论领域，成员密切跟踪前沿研究，定期举办读书分享会。至2017年，团队成员密切合作共出版图书9本，其中《嵌入式机器人学》荣获国家新闻出版总署年度优秀科技图书、教育部精品课程配套教材。《机器人未来》2015年被第一财经评为年度特别推荐图书。2016年至2017年密集推出了《ROS机器人程序设计（第二版）》《ROS机器人高效编程（第三版）》、《ROS机器人项目实战》、《机器人编程实战》等图书，目前已是国内ROS机器人领域出版图书最多的实验室。</p>
+                                <p>在教育领域，为普及ROS系统，培养机器人研发人员，2016年与NXROBO（深圳创想未来机器人有限公司）联合共同筹办了“星火计划”ROS系统培训。具有国内最强的精英讲师团队，和完备的课程和教育方案。截止2017年以举办15余场培训课，惠及数千名开发者。</p>
+                                <p>详情请看链接：<a href="http://blog.exbot.net/spark/">星火计划</a></p>
+                                <p>&nbsp;</p>
+                                <p>最后衷心感谢社区中无私的贡献者们，以及小伙伴们的口口相传。自2012年上线，exbot.net默默耕耘，目前已成长为国内知名的高逼格机器人开发者社区，希望有更多的慧眼认可支持社区，也希望有更多的大牛参与进来，把exbot.net打造成您我大家共同成长进步的平台！</p>
+                                <p>&nbsp;</p>
+                                <p><span style="font-family: 'arial black', 'avant garde'; font-size: 18pt;">期待您的加入！</span></p>
+                                <p>&nbsp;</p>
+                                <div id="trans-result-content" lang="EN-US" xml:lang="EN-US">
+                                    <p><strong><span style="font-size: large;">CONTACT US</span></strong></p>
+                                    <hr>
+                                    <p>MAIL：<a href="mailto:ex_bot@163.com">ex_bot@163.com</a></p>
+                                    <p>公众号：<strong>易科机器人实验室</strong></p>
+                                    <p><a href="http://blog.exbot.net/wp-content/uploads/2012/12/qrcode_for_gh_018e7613c9fb_430.jpg" class="cboxElement" rel="example_group" 8=""><img class="alignnone size-medium wp-image-3080" src="http://blog.exbot.net/wp-content/uploads/2012/12/qrcode_for_gh_018e7613c9fb_430-300x300.jpg" alt="" width="300" height="300" srcset="http://blog.exbot.net/wp-content/uploads/2012/12/qrcode_for_gh_018e7613c9fb_430-300x300.jpg 300w, http://blog.exbot.net/wp-content/uploads/2012/12/qrcode_for_gh_018e7613c9fb_430.jpg 430w" sizes="(max-width: 300px) 100vw, 300px"></a></p>
+                                    <p>微信群：加好友&nbsp; 申请请注明1.专业兴趣 2.城市&nbsp;3.学历或工作，审核合格后邀请加入</p>
+                                </div>
+                                <p><strong>可加入以下QQ群参与讨论：</strong></p>
+                                <p><strong>662786263（开放）ExBot ROS 学习群 层次：初学者。</strong></p>
+                                <p>426334501（已满）ExBot ROS专区</p>
+                                <p>109434898（已满）ExBot开源机器人社区</p>
+                                <p>364949875（关闭申请）ExBot ROS项目开发群</p>
+                                <p>侧重于项目开发。</p>
+                                <p>入群需满足以下条件之一：</p>
+                                <p>1. ExBot 其他群升级为高级成员，向当前群群主申请。</p>
+                                <p>2. 业界自身开发者，经本群其他成员推荐。</p>
+                                <p>&nbsp;</p>
+                                <div class="clear"></div>
+                            </div>
+                    </div>
+                    <!--<div class="comment">
+                        <div class="comment-top">
+                            <div class="comment-top-input" th:if="${#httpServletRequest.remoteUser}">
+                                <textarea id="comment" placeholder="客官，来说两句吧..."></textarea>
+                            </div>
+                            <div class="comment-top-input" th:unless="${#httpServletRequest.remoteUser}">
+                                <div class="goToLogin">
+                                    &nbsp;&nbsp;&nbsp;<a id="toLogin">登录</a>后才可以发表留言呦...
+                                </div>
+                            </div>
+                            <div class="commentBtn">
+                                <button id="commentBtn" type="button" class="am-btn am-btn-secondary">发表留言</button>
+                            </div>
+                        </div>
+                        &lt;!&ndash;页面留言&ndash;&gt;
+                        <div class="comment-bottom">
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer am-u-sm-centered">
+            <div class="am-vertical-align" style="text-align: center">
+                <hr>
+                <div class="am-vertical-align-bottom">
+                    <div style="color: #009688">
+                        &copy; 2019 ExBot易科机器人实验室<i class="fa fa-coffee" style="margin: 0 5px"></i>保留所有权利.
+                    </div>
+                    <div id="footer" style="color: #009688">
+                        总访问量 <span id="totalVisitors"><strong></strong></span> 次  访客量 <span id="visitorVolume"><strong></strong></span> 人次
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar_toggle" class="sidebar_toggle" data-am-offcanvas="{target: '#offCanvas'}">
+            <div class="sidebar_toggle_line_wrap">
+                <span class="sidebar-toggle-line sidebar-toggle-line-first" style="width: 100%; top: 0; transform: rotateZ(0deg); opacity: 1; left:0"></span>
+                <span class="sidebar-toggle-line sidebar-toggle-line-middle" style="width: 100%; opacity: 1; left: 0; top: 0; transform: rotateZ(0deg);"></span>
+                <span class="sidebar-toggle-line sidebar-toggle-line-last" style="width: 100%; top: 0; transform: rotateZ(0deg); opacity: 1; left: 0;"></span>
+            </div>
+        </div>
+        <div id="offCanvas" class="am-offcanvas">
+            <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+                <div class="am-offcanvas-content">
+                    <div class="sidebar-inner">
+                        <div class="site-overview">
+                            <div class="img-author" style="text-align: center">
+                                <p style="font-size: large;font-family: 仿宋">微信公众号</p>
+                                <div id="weixin">
+                                    <img class="weixinPublic" src="">
+                                </div>
+                                <div class="author-name">
+                                    易科机器人实验室
+                                </div>
+                                <div class="author-words">
+                                    <p>欢迎加入ExBot易科机器人实验室的团队</p>
+                                    <p>探索交流机器学习、机器视觉、ROS等机器人相关技术</p>
+                                </div>
+
+                            </div>
+                            <div class="site-state" style="opacity: 1; display: block; transform: translateX(0px);">
+                                <div class="site-state-item learn-posts">
+                                    <a href="/archives">
+                                        <span class="archivesNum site-state-item-count"></span>
+                                        <span class="site-state-item-name">日志</span>
+                                    </a>
+                                </div>
+                                <div class="site-state-item learn-categories">
+                                    <a id="site-state-item-a" href="/categories">
+                                        <span class="categoriesNum site-state-item-count"></span>
+                                        <span class="site-state-item-name">分类</span>
+                                    </a>
+                                </div>
+                                <div class="site-state-item learn-tags">
+                                    <a href="/tags">
+                                        <span class="tagsNum site-state-item-count"></span>
+                                        <span class="site-state-item-name">标签</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-way">
+                                <span><i class="fa fa-qq">&nbsp;&nbsp;18751655981</i></span>
+                                <span><i class="fa fa-wechat">&nbsp;&nbsp;tan</i></span>
+                            </div>
+                            <div class="rss">
+                                <div class="rss-site">
+                                    <a class="rss-site-a" href="/rss">
+                                        <i class="fa fa-rss"> RSS</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+            <a id="toTop"  href="#top">
+            <span title="到顶部" style="color: white">
+                <i class="fa fa-arrow-up"></i>
+            </span>
+            </a>
+        </div>
+    </div>
+    <!--成功消息盒-->
+    <div class="notice successNoticeAlert am-animation-slide-top">
+        <span class="successNotice"></span>
+    </div>
+    <!--失败消息盒-->
+    <div class="notice dangerNoticeAlert am-animation-slide-top">
+        <span class="dangerNotice"></span>
+    </div>
+    <div class="feedback am-animation-slide-top">
+        <a class="feedbackClose am-close am-close-alt am-close-spin am-icon-times"></a>
+        <div class="feedbackTitle">
+            反馈
+        </div>
+        <div class="feedbackWord">
+            您对于本博客网站有任何意见或是存在Bug的地方，欢迎进行反馈
+        </div>
+        <div class="feedbackForm">
+            <form class="am-form">
+                <fieldset class="am-form-set">
+                    <textarea id="feedbackFormContent" placeholder="非常感谢您抽出时间填写问题反馈。必填"></textarea>
+                    <input type="text" class="feedbackFormQQ" placeholder="方便留下QQ或是微信联系你吗。选填">
+                </fieldset>
+                <button type="button" class="feedbackFormBtn am-btn am-btn-primary am-btn-block">提交反馈</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/all.js"></script>
+<script src="js/leaveMessage.js"></script>
+<!--放大图片插件-->
+<script src="js/lightgallery/lightgallery.js"></script>
+<script src="js/lightgallery/picturefill.min.js"></script>
+<script src="js/lightgallery/lg-pager.js"></script>
+<script src="js/lightgallery/lg-autoplay.js"></script>
+<script src="js/lightgallery/lg-fullscreen.js"></script>
+<script src="js/lightgallery/lg-zoom.js"></script>
+<script>
+    lightGallery(document.getElementById('wordsView'));
+</script>
+</body>
+</html>

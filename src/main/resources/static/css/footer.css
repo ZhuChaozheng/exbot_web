@@ -1,0 +1,775 @@
+@media ( min-width :768px) {
+	.exbot-common-footer-2017 .module-wrap .exbot-main-know {
+		padding: 30px 20px 0
+	}
+	.exbot-common-footer-2017 .module-wrap .exbot-main-hot {
+		padding: 20px 20px 0
+	}
+	.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 {
+		padding: 20px !important
+	}
+	.exbot-common-footer-2017 .module-wrap .y-row {
+		width: 100%;
+		min-width: inherit !important
+	}
+}
+
+.exbot-common-footer-2017 .y-row {
+	min-width: 1000px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	zoom: 1;
+	*width: 1000px
+}
+
+.exbot-common-footer-2017 .y-row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.exbot-common-footer-2017 .y-left, .exbot-common-footer-2017 .y-right
+	{
+	display: inline
+}
+
+.exbot-common-footer-2017 .y-left {
+	float: left !important
+}
+
+.exbot-common-footer-2017 .y-right {
+	float: right !important
+}
+
+.exbot-common-footer-2017 .y-clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.exbot-common-footer-2017 .y-clear {
+	zoom: 1
+}
+
+.exbot-common-footer-2017 .y-align-center {
+	text-align: center !important
+}
+
+.exbot-common-footer-2017 a.y-btn-anti, .exbot-common-footer-2017 a.y-btn-anti:link,
+	.exbot-common-footer-2017 a.y-btn-anti:visited,
+	.exbot-common-footer-2017 a.y-btn-blue, .exbot-common-footer-2017 a.y-btn-blue:link,
+	.exbot-common-footer-2017 a.y-btn-blue:visited,
+	.exbot-common-footer-2017 a.y-btn-trans, .exbot-common-footer-2017 a.y-btn-trans:link,
+	.exbot-common-footer-2017 a.y-btn-trans:visited,
+	.exbot-common-footer-2017 a.y-btn-white, .exbot-common-footer-2017 a.y-btn-white:link,
+	.exbot-common-footer-2017 a.y-btn-white:visited {
+	display: inline-block;
+	min-width: 78px;
+	height: 33px;
+	padding: 0 30px 1px;
+	background: #00a2ca;
+	line-height: 33px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	outline: none;
+	border-radius: 0;
+	*width: auto
+}
+
+.exbot-common-footer-2017 a.y-btn-blue:hover {
+	background: #33b5d4;
+	border-color: #33b5d4;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 a.y-btn-blue:active {
+	background: #008fb2;
+	border-color: #008fb2
+}
+
+.float-tool {
+	position: fixed;
+	width: 39px;
+	right: 7px;
+	bottom: 40%;
+	z-index: 250;
+	margin-bottom: -210px
+}
+
+@media ( max-width :768px) {
+	[data-spm=mini_cart] {
+		display: none
+	}
+}
+
+.exbot-common-footer-2017 {
+	font-size: 12px
+}
+
+.exbot-common-footer-2017 .module-wrap * {
+	box-sizing: border-box
+}
+
+.exbot-common-footer-2017 .module-wrap .home-page-register {
+	width: 100%;
+	height: 116px;
+	background-color: #00c1de;
+	position: relative
+}
+
+.exbot-common-footer-2017 .module-wrap .home-page-register .register-btn
+	{
+	position: relative;
+	z-index: 2;
+	border: none;
+	color: #00c1de;
+	background-color: #fff;
+	padding: 8px 28px;
+	margin-top: 40px;
+	height: 36px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	transition: all .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .home-page-register .register-btn:active,
+	.exbot-common-footer-2017 .module-wrap .home-page-register .register-btn:hover
+	{
+	background-color: #f5f5f6;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .home-page-register .register-background
+	{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .2;
+	filter: alpha(opacity = 20);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20))
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time {
+	background-color: #31373b
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content
+	{
+	height: 120px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content .exbot-main-time-what
+	{
+	line-height: 120px;
+	color: #fff;
+	font-size: 16px;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content .exbot-main-time-what:hover
+	{
+	color: #28d0e9 !important
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li
+	{
+	width: 25%;
+	float: left;
+	text-align: left
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li a
+	{
+	position: relative;
+	padding-left: 60px;
+	height: 120px;
+	line-height: 120px;
+	display: inline-block;
+	color: #666
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li a img
+	{
+	position: absolute;
+	left: 0;
+	width: 50px;
+	top: 34px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li a img.white
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li a img.black
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-time .exbot-main-time-content>li a:hover
+	{
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know {
+	padding-top: 30px;
+	background-color: #373d41;
+	min-height: 220px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div {
+	padding-bottom: 30px;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 300px;
+	border-bottom: 1px solid #4b5054
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell {
+	left: 0;
+	width: 280px;
+	position: absolute
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div
+	{
+	position: relative;
+	padding-left: 80px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div img
+	{
+	position: absolute;
+	left: 0;
+	width: 50px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div img.white
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div img.black
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div img.white-black
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div h2
+	{
+	color: #d7d8d9;
+	font-size: 16px;
+	height: 30px;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div h1
+	{
+	color: #fff;
+	font-size: 20px;
+	height: 30px;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div ul
+	{
+	margin: 16px 0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div ul li
+	{
+	height: 30px;
+	line-height: 30px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div ul li a
+	{
+	font-size: 14px;
+	color: #9b9ea0;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .phone-cell>div ul li a:hover
+	{
+	color: #28d0e9 !important;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content
+	{
+	border-left: 1px solid #4b5054;
+	box-sizing: border-box;
+	padding-left: 130px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content>li
+	{
+	width: 22%;
+	float: left
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-title
+	{
+	color: #d7d8d9;
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	font-weight: bolder
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-subcontent
+	{
+	margin-top: 14px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-subcontent li
+	{
+	margin-top: 8px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-subcontent li a
+	{
+	color: #9b9ea0;
+	height: 18px;
+	line-height: 18px;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-subcontent li a:hover
+	{
+	color: #28d0e9 !important;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-know>div .exbot-main-know-content .exbot-main-know-subcontent li.qr-code img
+	{
+	margin-top: 16px;
+	width: 80px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot {
+	padding-top: 20px;
+	background-color: #373d41
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot>div {
+	border-bottom: 1px solid #4b5054;
+	padding-bottom: 20px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot .exbot-main-hot-content>li
+	{
+	position: relative;
+	padding-left: 80px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot .exbot-main-hot-content>li .exbot-main-hot-title
+	{
+	font-size: 12px;
+	color: #9b9ea0;
+	font-weight: bolder;
+	position: absolute;
+	left: 0;
+	margin-top: 8px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot .exbot-main-hot-content>li .exbot-main-hot-subcontent li
+	{
+	width: 124px;
+	float: left;
+	margin-top: 8px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot .exbot-main-hot-content>li .exbot-main-hot-subcontent li a
+	{
+	color: #73777a;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-main-hot .exbot-main-hot-content>li .exbot-main-hot-subcontent li a:hover
+	{
+	color: #28d0e9 !important;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 {
+	background-color: #373d41;
+	padding: 20px 0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .copyright .big
+	{
+	display: inline-block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .copyright .big a
+	{
+	font-size: 16px;
+	color: #9b9ea0;
+	margin-right: 35px;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .copyright .big a:hover
+	{
+	color: #28d0e9 !important;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .copyright .footer-search
+	{
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+	position: relative
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice
+	{
+	background-color: hsla(0, 0%, 100%, .1);
+	box-sizing: content-box !important;
+	display: none;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #bbbdbf;
+	padding: 0 10px 0 35px;
+	line-height: 30px;
+	position: relative;
+	cursor: pointer;
+	color: #bbbdbf
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice:hover .icon-up3,
+	.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice:hover ul
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice:hover .icon-down3
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice img
+	{
+	width: 22px;
+	left: 6px;
+	position: absolute;
+	top: 5px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice .icon-up3
+	{
+	display: none;
+	font-family: iconfont !important
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice .icon-down3
+	{
+	display: block;
+	font-family: iconfont !important
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice i
+	{
+	position: absolute;
+	right: 5px;
+	top: 7px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice>ul
+	{
+	display: none;
+	background-color: hsla(0, 0%, 100%, .1);
+	width: 145px;
+	left: -1px;
+	position: absolute;
+	top: 30px;
+	color: #bbbdbf;
+	border: 1px solid #bbbdbf
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .select-choice>ul li
+	{
+	position: relative;
+	padding: 0 10px 0 35px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .footer-search
+	{
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+	position: relative
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .footer-search input
+	{
+	background-color: hsla(0, 0%, 100%, .1);
+	border: 1px solid #bbbdbf;
+	height: 30px;
+	color: #bbbdbf;
+	padding: 0 30px 0 10px;
+	width: 178px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .footer-search button
+	{
+	width: 30px;
+	position: absolute;
+	top: 1px;
+	height: 30px;
+	right: 1px;
+	background-color: hsla(0, 0%, 100%, 0);
+	border: 0;
+	cursor: pointer
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .footer-search button i
+	{
+	font-size: 16px;
+	color: #b3b3b3
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .link-wrap {
+	padding-top: 32px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .link-wrap .link-item
+	{
+	display: inline-block;
+	font-size: 14px;
+	color: #73777a;
+	margin-right: 10px;
+	margin-top: 10px;
+	transition: color .3s
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .link-wrap .link-item:hover
+	{
+	color: #28d0e9 !important;
+	text-decoration: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .copyright {
+	color: #73777a;
+	font-size: 14px;
+	margin-top: 10px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-copyright-100 .xin {
+	margin-top: 10px;
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time
+	{
+	background-color: #ebecec
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time .exbot-main-time-content
+	{
+	height: 120px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time .exbot-main-time-content .exbot-main-time-what
+	{
+	color: #373d41
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time .exbot-main-time-content>li a
+	{
+	position: relative;
+	padding-left: 60px;
+	height: 120px;
+	line-height: 120px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time .exbot-main-time-content>li a img.white
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-time .exbot-main-time-content>li a img.black
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know
+	{
+	background-color: #f5f5f6
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know>div
+	{
+	border-bottom: 1px solid #cfd0d1
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell img.white
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell img.black,
+	.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell img.white-black
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell h1,
+	.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell h2
+	{
+	color: #373d41
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .phone-cell ul li a
+	{
+	color: #73777a
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .exbot-main-know-content
+	{
+	border-left: 1px solid #cfd0d1
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .exbot-main-know-content .exbot-main-know-title
+	{
+	color: #373d41
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-know .exbot-main-know-content .exbot-main-know-subcontent li a
+	{
+	color: #73777a
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-hot
+	{
+	background-color: #f5f5f6
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-hot>div
+	{
+	border-bottom: 1px solid #cfd0d1
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-hot .exbot-main-hot-content .exbot-main-hot-title
+	{
+	color: #73777a
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-main-hot .exbot-main-hot-content .exbot-main-hot-subcontent li a
+	{
+	color: #9b9ea0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-copyright-100
+	{
+	background-color: #f5f5f6
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-copyright-100 .big a
+	{
+	color: #73777a !important
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-copyright-100 .copyright,
+	.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white .exbot-copyright-100 .link-wrap .link-item
+	{
+	color: #9b9ea0
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white.exbot-common-footer-small .exbot-main-know
+	{
+	background-color: #ebecec
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white.exbot-common-footer-small .exbot-main-know .phone-cell img.black,
+	.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white.exbot-common-footer-small .exbot-main-know .phone-cell img.white
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white.exbot-common-footer-small .exbot-main-know .phone-cell img.white-black
+	{
+	display: block
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-white.exbot-common-footer-small .exbot-main-know .phone-cell li a
+	{
+	color: #373d41
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-time
+	{
+	display: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know
+	{
+	background-color: #31373b;
+	min-height: 110px;
+	box-sizing: border-box
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know>div
+	{
+	border-bottom: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .phone-cell
+	{
+	height: 110px;
+	width: 100%
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .phone-cell ul
+	{
+	left: 267px;
+	position: absolute;
+	top: -4px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .phone-cell ul li
+	{
+	float: left;
+	border-left: 1px solid #cfd0d1;
+	padding: 0 15px;
+	height: 20px;
+	line-height: 20px
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .phone-cell ul li:first-child
+	{
+	border-left: none
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .phone-cell ul li a
+	{
+	font-size: 16px;
+	color: #fff
+}
+
+.exbot-common-footer-2017 .module-wrap .exbot-common-footer-small .exbot-main-know .exbot-main-know-content
+	{
+	display: none
+}

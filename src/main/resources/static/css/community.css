@@ -1,0 +1,139 @@
+.exbot-index-community .module-wrap .exbot-index-community {
+	background-color: #f5f5f5;
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community * {
+	box-sizing: border-box
+}
+
+.exbot-index-community .module-wrap .exbot-index-community a {
+	text-decoration: none
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-head
+	{
+	margin-bottom: 28px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-head h1
+	{
+	font-size: 24px;
+	text-align: center
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-head a.index-info
+	{
+	display: block;
+	text-align: center;
+	margin-top: 12px;
+	font-size: 16px;
+	color: #5f6367
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-head a.index-info:hover
+	{
+	text-decoration: none;
+	color: #28d0e9
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-head p.index-info
+	{
+	margin-top: 12px;
+	text-align: center;
+	font-size: 16px;
+	color: #5f6367;
+	line-height: 24px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content
+	{
+	width: 100%
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content.clearfix
+	{
+	text-align:center;
+	zoom: 1;
+	display: block;
+	_height: 1px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content.clearfix:after
+	{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item
+	{
+	display:inline-block;
+	width: 30%;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box
+	{
+	transition: all .15s cubic-bezier(.4, 0, .2, 1);
+	cursor: pointer;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid #c5d8db;
+	height: 230px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box .img-area
+	{
+	width: 100%;
+	overflow: hidden;
+	height: 170px
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box .img-area img
+	{
+	transition: all .5s ease;
+	width: 100%
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box .box-header
+	{
+	padding: 18px 25px;
+	font-size: 14px;
+	color: #373d41
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box:hover
+	{
+	box-shadow: 0 0 15px rgba(186, 204, 207, .7)
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-box:hover .img-area img
+	{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-appendix
+	{
+	text-align:left;
+	font-size: 14px;
+	padding-left: 0;
+	line-height: 2
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-appendix a
+	{
+	transition: all .15s cubic-bezier(.4, 0, .2, 1);
+	color: #373d41;
+	text-decoration: none
+}
+
+.exbot-index-community .module-wrap .exbot-index-community .exbot-main-content .exbot-content-item .item-appendix a:hover
+	{
+	color: #01c1de
+}
