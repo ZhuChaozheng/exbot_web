@@ -38,9 +38,9 @@ public class UserServiceImpl implements UserService {
             return "1";
         }
         if("male".equals(user.getGender())){
-            user.setAvatarImgUrl("https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/public/user/avatar/noLogin_male.jpg");
+            user.setAvatarImgUrl("https://exbot-myblog.oss-cn-shenzhen.aliyuncs.com/public/user/avatar/noLogin_male.jpg");
         } else {
-            user.setAvatarImgUrl("https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/public/user/avatar/noLogin_female.jpg");
+            user.setAvatarImgUrl("https://exbot-myblog.oss-cn-shenzhen.aliyuncs.com/public/user/avatar/noLogin_female.jpg");
         }
         userMapper.insert(user);
         int userId = userMapper.findUserIdByPhone(user.getPhone());

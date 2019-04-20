@@ -25,6 +25,12 @@ public interface CategoryService {
     JSONArray findCategoriesName();
 
     /**
+     * 获得所有的封面图片
+     * @return
+     */
+    JSONArray findImgUrls();
+
+    /**
      * 获得分类数目
      * @return
      */

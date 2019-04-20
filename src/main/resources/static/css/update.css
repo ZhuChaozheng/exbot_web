@@ -2,13 +2,13 @@
     .site-inner{
         margin: 0 19%;
     }
-    .zhy-word p{
+    .exbot-word p{
         text-indent: 7em;
     }
-    .zhy-word{
+    .exbot-word{
         padding: 20px 25px;
     }
-    .zhy-update{
+    .exbot-update{
         margin: 0 19%;
     }
     .update-leave-message{
@@ -19,13 +19,13 @@
     .site-inner{
         margin: 0 5%;
     }
-    .zhy-word p{
+    .exbot-word p{
         text-indent: 2em;
     }
-    .zhy-word{
+    .exbot-word{
         padding: 20px 5px;
     }
-    .zhy-update{
+    .exbot-update{
         margin: 0 3%;
     }
 }
@@ -44,7 +44,7 @@
 .site-inner-mywords{
     margin: 30px auto;
 }
-.zhy-word{
+.exbot-word{
     margin-top: 10px;
     margin-left: 40px;
     font-size: 21px;
@@ -52,18 +52,18 @@
     color: blue;
     font-family: 华文仿宋;
 }
-.zhy-update-log-title{
+.exbot-update-log-title{
     margin-top: 50px;
 }
-.zhy-update-log-title h1{
+.exbot-update-log-title h1{
     font-size: 22px;
     color: #222;
     text-indent: 1em;
 }
-.zhy-update-log-title p{
+.exbot-update-log-title p{
     text-indent: 1.5em;
 }
-.zhy-update-log-content{
+.exbot-update-log-content{
     margin-top: 10px;
 }
 .update-log i{

@@ -158,6 +158,16 @@ public class EditorControl {
     }
 
     /**
+     * 获得所有的封面图片
+     * @return
+     */
+    @GetMapping("/findImgUrls")
+    @ResponseBody
+    public JSONArray findImgUrls(){
+        return categoryService.findImgUrls();
+    }
+
+    /**
      * 获得是否有未发布的草稿文章或是修改文章
      */
     @GetMapping("/getDraftArticle")

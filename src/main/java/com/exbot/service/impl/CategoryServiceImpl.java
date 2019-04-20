@@ -47,6 +47,12 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    public JSONArray findImgUrls() {
+        List<String> imgUrls = categoryMapper.findImgUrls();
+        return JSONArray.fromObject(imgUrls);
+    }
+
+    @Override
     public int countCategoriesNum() {
         return categoryMapper.countCategoriesNum();
     }

@@ -18,6 +18,9 @@ public interface CategoryMapper {
     @Select("select categoryName from categories")
     List<String> findCategoriesName();
 
+    @Select("select description from imgurl")
+    List<String> findImgUrls();
+
     @Select("select count(*) from categories")
     int countCategoriesNum();
 

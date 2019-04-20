@@ -1,6 +1,7 @@
 
     var flag = 1;
     var aCategory = "";
+    var aImg = "";
 
     $('#originalAuthorHide').hide();
     $('.articleUrlHide').hide();
@@ -40,7 +41,7 @@
         });
 
     var publishBtn = $('.publishBtn');
-    var articleTitle = $('#zhy-editor-title');
+    var articleTitle = $('#exbot-editor-title');
     var articleContent = $('#my-editormd-html-code');
     var noticeBoxTitle = $('.notice-box-title');
     var noticeBoxContent = $('.notice-box-content');
@@ -76,6 +77,11 @@
                 error:function () {
                 }
             });
+            var selectImgUrls = $('#select-imgUrls');
+            selectImgUrls.empty();
+            if(aImg !== "" && aImg.length > 0){
+                selectImgUrls.val(aImg);
+            }
         }
         // 定时关闭错误提示框
         var closeNoticeBox = setTimeout(function () {
@@ -140,7 +146,7 @@
         dataType:"json",
         success:function (data) {
             if(data['status'] == 201){
-                $('#zhy-editor-title').val(data['result']['articleTitle']);
+                $('#exbot-editor-title').val(data['result']['articleTitle']);
                 $('#my-editormd-markdown-doc').html(data['result']['articleContent']);
                 $('#select-type').val(data['result']['articleType']);
                 $('#select-grade').val(data['result']['articleGrade']);
@@ -151,6 +157,7 @@
                     $('.articleUrlHide').show();
                 }
                 aCategory = data['result']['articleCategories'];
+                aImg = data['result']['imgUrl'];
                 var tags = data['result']['articleTags'];
                 var tag = $('.tag');
                 for(var i in tags){
@@ -216,6 +223,7 @@
     var articleGrade = $('#select-grade');
     var originalAuthor = $('#originalAuthor');
     var articleUrl = $('#articleUrl');
+    var imgUrl = $('#select-imgUrls');
     surePublishBtn.click(function () {
         var tagNum = $('.tag').find('.tag-name').length;
         var articleTagsValue = [];
@@ -227,6 +235,7 @@
         var articleGradeValue = articleGrade.val();
         var originalAuthorValue = originalAuthor.val();
         var articleUrlValue = articleUrl.val();
+        var imgUrlValue = imgUrl.val();
         if(articleTagsValue.length === 0 || articleTagsValue[tagNum-1] === ""){
             $('.notice-box-tags').show();
         } else if (articleTypeValue === "choose"){
@@ -254,6 +263,7 @@
                     articleGrade : articleGradeValue,
                     originalAuthor : originalAuthorValue,
                     articleUrl : articleUrlValue,
+                    imgUrl : imgUrlValue,
                     articleHtmlContent : testEditor.getHTML()
                 },
                 contentType:"application/x-www-form-urlencoded; charset=utf-8",

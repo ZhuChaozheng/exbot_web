@@ -24,11 +24,11 @@
     font-weight: 500;
     font-family: 华文行楷;
 }
-.zhy-editor-input{
+.exbot-editor-input{
     /*padding: 0 140px 0 30px;*/
     margin: 10px 30px 13px 30px;
 }
-#zhy-editor-title{
+#exbot-editor-title{
     width: 90%;
     height: 40px;
     box-sizing: border-box;
@@ -49,7 +49,7 @@
     margin-left: 15px;
     border-radius: 7px;
 }
-.zhy-editor-writing{
+.exbot-editor-writing{
     margin-top: 10px;
 }
 .notice-box{
@@ -96,7 +96,13 @@
     display: inline-block;
     font-weight: 400;
 }
-.tags,.type,.tag,.tag-inline,.categories,.grade,.Url,.tabloid{
+
+.publish-img{
+    display: inline-block;
+    font-weight: 400;
+}
+
+.tags,.type,.tag,.tag-inline,.categories,.grade,.imgUrls,.Url,.tabloid{
     display: inline-block;
 }
 .tag-name{
@@ -137,7 +143,7 @@
     font-size: 14px;
     line-height: 32px;
 }
-#select-type,#select-categories,#select-grade{
+#select-type,#select-categories,#select-grade,#select-imgUrls{
     margin-left: 8px;
     width: 138px;
     height: 32px;

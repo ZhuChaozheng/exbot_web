@@ -176,19 +176,19 @@
     padding: 15px 0 0;
     margin-top: -10px;
 }
-.zhy-info-day{
+.exbot-info-day{
     padding: 7px 10px;
 }
-.zhy-info-day p{
+.exbot-info-day p{
     text-align: center;
     font-size: 14px;
     line-height: 19px;
 }
-.zhy-info-opinion{
+.exbot-info-opinion{
     margin-top: 25px;
     text-align: center;
 }
-.zhy-info-opinion p{
+.exbot-info-opinion p{
     font-size: 16px;
     font-family: 仿宋;
 }
@@ -264,19 +264,19 @@ a.linkColor{
 .halving-line i{
     margin: auto 10px;
 }
-.zhy-qq-weixin p{
+.exbot-qq-weixin p{
     color: lightyellow;
     font-size: large;
     font-family: 仿宋
 }
-.zhy-qq-box img{
+.exbot-qq-box img{
     width:130px;
     border: 10px;
 }
-.zhy-weixin-box{
+.exbot-weixin-box{
     margin-top: 20px;
 }
-.zhy-weixin-box img{
+.exbot-weixin-box img{
     width:130px;
     border: 10px;
 }
@@ -402,4 +402,30 @@ a.tag:hover{
 }
 .site-default-icon{
     margin-right: 10px;
+}
+#scroll {
+    width: 30px;
+    float: right;
+    position: fixed;
+    right: 35px;
+    bottom: 50px;
+    z-index: 3;
+}
+
+ul {
+    list-style: none;
+}
+
+#links > ul li{
+    float: left;
+    padding: 10px;
+}
+
+
+a,a:link{
+    color:#373d41;
+    text-decoration: none;
+}
+a:hover {
+    color: #00C1DE;
 }

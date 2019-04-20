@@ -53,7 +53,7 @@ public class ArticleServiceImpl implements ArticleService {
                 article.setOriginalAuthor(article.getAuthor());
             }
             if("".equals(article.getArticleUrl())){
-//                String url = "http://localhost/findArticle?articleId=" + article.getArticleId() + "&originalAuthor=" + article.getOriginalAuthor();
+                //String url = "http://localhost/findArticle?articleId=" + article.getArticleId() + "&originalAuthor=" + article.getOriginalAuthor();
                 String url = "http://www.exbot.net:23452/findArticle?articleId=" + article.getArticleId() + "&originalAuthor=" + article.getOriginalAuthor();
                 article.setArticleUrl(url);
             }

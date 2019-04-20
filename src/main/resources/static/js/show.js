@@ -4,8 +4,8 @@
 
     //填充文章
     function putInArticle(data) {
-        $('.zhy-article-top').html('');
-        $('.zhy-article-footer').html('');
+        $('.exbot-article-top').html('');
+        $('.exbot-article-footer').html('');
         var articleTop = $('<article-top><div class="article-title">' +
             '<h1>' + data.articleTitle + '</h1>' +
             '</div>' +
@@ -23,7 +23,7 @@
             '<i class="am-icon-folder"> <a class="articleCategoryColor" href="/categories?category=' + data.articleCategories + '">' + data.articleCategories + '</a></i>' +
             '</div>' +
             '</div></article-top>');
-        $('.zhy-article-top').append(articleTop);
+        $('.exbot-article-top').append(articleTop);
         $("#mdText").text(data.articleContent);
         var wordsView;
         wordsView = editormd.markdownToHTML("wordsView", {
@@ -63,7 +63,7 @@
             '<span class="article-next">' +
             '</span>' +
             '</div>');
-        $('.zhy-article-footer').append(articleFooter);
+        $('.exbot-article-footer').append(articleFooter);
         var tags = $('<div class="tags"></div>');
         for(var i=0;i<data.articleTags.length;i++){
             var tag = $('<i class="am-icon-tag"></i><a class="articleTagColor" href="/tags?tag=' + data.articleTags[i] + '"> ' + data.articleTags[i] + '</a>');
@@ -492,8 +492,8 @@
                 putInArticle(data);
             } else {
                 $('.content').html('');
-                var error = $('<div class="article"><div class="zhy-article-top"><div class="error">' +
-                    '<img src="https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/register_success.jpg">' +
+                var error = $('<div class="article"><div class="exbot-article-top"><div class="error">' +
+                    '<img src="https://exbot-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/register_success.jpg">' +
                     '<p>没有找到这篇文章哦</p>' +
                     '<p>可能不小心被博主手残删掉了吧</p>' +
                     '<div class="row">' +

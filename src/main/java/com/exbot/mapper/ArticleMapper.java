@@ -16,8 +16,8 @@ import java.util.List;
 @Repository
 public interface ArticleMapper {
 
-    @Insert("insert into article(articleId,author,originalAuthor,articleTitle,publishDate,updateDate,articleContent,articleTags,articleType,articleCategories,articleUrl,articleTabloid,likes,lastArticleId,nextArticleId) " +
-            "values(#{articleId},#{author},#{originalAuthor},#{articleTitle},#{publishDate},#{updateDate},#{articleContent},#{articleTags},#{articleType},#{articleCategories},#{articleUrl},#{articleTabloid},#{likes},#{lastArticleId},#{nextArticleId})")
+    @Insert("insert into article(articleId,author,originalAuthor,articleTitle,publishDate,updateDate,articleContent,articleTags,articleType,articleCategories,articleUrl,articleTabloid,likes,lastArticleId,nextArticleId,imgUrl) " +
+            "values(#{articleId},#{author},#{originalAuthor},#{articleTitle},#{publishDate},#{updateDate},#{articleContent},#{articleTags},#{articleType},#{articleCategories},#{articleUrl},#{articleTabloid},#{likes},#{lastArticleId},#{nextArticleId},#{imgUrl})")
     void insertArticle(Article article);
 
     @Update("update article set originalAuthor=#{originalAuthor},articleTitle=#{articleTitle},updateDate=#{updateDate},articleContent=#{articleContent},articleTags=#{articleTags},articleType=#{articleType},articleCategories=#{articleCategories},articleUrl=#{articleUrl},articleTabloid=#{articleTabloid} where id=#{id}")

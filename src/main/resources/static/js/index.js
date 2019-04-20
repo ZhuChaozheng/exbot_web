@@ -76,3 +76,22 @@ function show(obj) {
 		 left: $(obj).position().left + $(obj).outerWidth(!0) / 2 - t.outerWidth(!0) / 2
 	 })
  }
+
+function goTop() {
+    $('html').animate({
+        scrollTop : '0px'
+    }, 600);
+}
+
+/*下拉时固定导航栏*/
+$(window).scroll(function() {
+    var nav = $("#headerPage"); // 得到导航对象
+    var goTop=$("#goTop");
+    if ($(window).scrollTop() >= 100) {
+        nav.addClass("navbar-fixed-top");
+        goTop.attr("style","cursor: pointer;display: block");
+    } else {
+        nav.removeClass("navbar-fixed-top");
+        goTop.attr("style","display: none");
+    }
+})
