@@ -159,7 +159,7 @@
 
 ###### 页面与展示
 
-- 使用妹子UI主题](http://amazeui.org/)，减少了页面的开发难度
+- 使用[妹子UI主题](http://amazeui.org/)，减少了页面的开发难度
 - 前端页面与后端的交互主要是在controller包中，并使用Thymeleaf渲染页面。
 - 自定义异常处理页面，通过重写`WebMvcConfigurerAdapter`实现自动跳转到404、403页面
 
