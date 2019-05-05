@@ -7,6 +7,6 @@ package com.exbot.constant;
  */
 public interface SiteOwner {
 
-    String SITE_OWNER = "张海洋";
+    String SITE_OWNER = "exbot";
 
 }
