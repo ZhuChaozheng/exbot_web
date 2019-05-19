@@ -429,3 +429,8 @@ a,a:link{
 a:hover {
     color: #00C1DE;
 }
+
+.div-inline{
+    display:inline;
+    margin:30px;
+}
