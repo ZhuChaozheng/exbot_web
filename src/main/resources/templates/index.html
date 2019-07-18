@@ -41,6 +41,25 @@
             $('#myCarousel').carousel({
                 interval: 2000
             });
+            var wid1 = document.getElementsByClassName('carousel-indicators');
+            var wid2 = document.getElementsByClassName('right carousel-control');
+            var l = 1000 - document.body.clientWidth * 0.15;
+            var h1 = document.getElementsByClassName('first-slide');
+            var h2 = document.getElementsByClassName('carousel slide');
+            h2[0].style.height = h1[0].offsetHeight + "px";
+            // console.log(wid[0].style.width);
+            // wid[0].style.width = 80 + "%";
+             //alert(document.body.clientWidth );
+            if(document.body.clientWidth  >= 1000)
+               { 
+                wid1[0].style.left = 50 + "%";
+                wid2[0].style.left = "auto";
+           }
+            else
+                { 
+                wid1[0].style.left = "500px";
+                wid2[0].style.left =  l + "px";
+           }
         });
     </script>
     <!-- Custom fonts for this template -->
@@ -60,7 +79,7 @@
 <body>
 <div class="page-layout page-main-content">
     <!-- 导航栏 -->
-    <div class="header">
+    <div class="header" style="min-width: 1000px;">
         <div class="am-topbar" style="margin-bottom: 0">
             <h1 class="am-topbar-brand">
                 <a href="/" class="blogTitleName"><img src="img/site/logo_min.png" class="imgStyle">易科机器人实验室</a>
@@ -117,12 +136,16 @@
             <!--   <li data-target="#myCarousel" data-slide-to="2"></li>  -->
         </ol>
         <!-- content -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="first-slide" src="img/lunbo/banner_1.png" alt="First slide">
+        <div class="carousel-inner" role="listbox" style="min-width: 1000px;"> <!--change1 -->
+            <div class="item active" style="text-align: center;min-width: 1000px;height: 100%;">
+                <img class="first-slide" src="img/lunbo/banner_1.png" alt="First slide" style="max-height: 100%;
+                max-width: 100%;
+                vertical-align: middle;">
             </div>
-            <div class="item">
-                <img class="second-slide" src="img/lunbo/banner_2.png " alt="Second slide">
+            <div class="item" style="text-align: center;min-width: 1000px;height: 100%;">
+                <img class="second-slide" src="img/lunbo/banner_2.png " alt="Second slide" style="max-height: 100%;
+                max-width: 100%;
+                vertical-align: middle;">
             </div>
 
             <!-- <div class="item">
