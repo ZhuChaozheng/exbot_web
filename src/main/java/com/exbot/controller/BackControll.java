@@ -63,7 +63,7 @@ public class BackControll {
      **/
     @GetMapping("/register")
     public String register(){
-        return "registe";
+        return "register";
     }
 
     @GetMapping("/aboutme")
