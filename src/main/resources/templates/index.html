@@ -75,6 +75,38 @@
     <link rel="stylesheet" type="text/css" href="css/community.css">
     <link rel="stylesheet" type="text/css" href="css/project.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+<script>
+const sidebarElement = document.querySelector(':root');
+const cssStyles = getComputedStyle(sidebarElement);
+var diviceWidth = document.documentElement.clientWidth;
+var diviceHeight = document.documentElement.clientHeight;
+diviceWidth=diviceWidth/1024;
+sidebarElement.style.setProperty('--small-width', diviceWidth);
+diviceWidth=1-diviceWidth;
+diviceHeight=-1*diviceHeight*diviceWidth*2;
+diviceHeight=diviceHeight+'px';
+const cssVal1 = String(cssStyles.getPropertyValue('--small-width')).trim();
+console.log(cssVal1);
+sidebarElement.style.setProperty('--small-height', diviceHeight);
+const cssVal2 = String(cssStyles.getPropertyValue('--small-height')).trim();
+console.log(cssVal2);
+</script>
+
+<style type="text/css">
+:root{
+--small-width:0.5
+--small-height:0.5
+}
+@media (max-width: 1000px) {
+ body{
+	  transform: scale(var(--small-width));
+	  transform-origin: 0 0;
+	  margin-bottom:-10000px;
+      }
+}
+</style>
+
 </head>
 <body>
 <div class="page-layout page-main-content">
@@ -260,19 +292,19 @@
     <div class="exbot-index-project">
         <hr class="half-rule">
         <div class="module-wrap" style="text-align: center">
-            <div class="div-inline">
+            <div class="div-inline" style="margin:0;">
                 <iframe width="240" height="200" src="//player.bilibili.com/player.html?aid=66255010&cid=114914345&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                 <!-- <embed src="http://player.youku.com/player.php/sid/XMzQ1Mjg1NTc4OA==/v.swf" allowfullscreen="true" quality="high" width="240" height="200" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" > -->
             </div>
-            <div class="div-inline">
+            <div class="div-inline" style="margin:0;">
                 <iframe width="240" height="200" src="//player.bilibili.com/player.html?aid=66254935&cid=114914009&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                 <!-- <embed src="http://player.youku.com/player.php/sid/XMjUyNzQ2MTQxMg==/v.swf" allowfullscreen="true" quality="high" width="240" height="200" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" > -->
             </div>
-            <div class="div-inline">
+            <div class="div-inline" style="margin:0;">
                 <iframe width="240" height="200" src="//player.bilibili.com/player.html?aid=66255128&cid=114914437&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                 <!-- <embed src="http://player.youku.com/player.php/sid/XMTUxODYzNzk2OA==/v.swf" allowfullscreen="true" quality="high" width="240" height="200" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" > -->
             </div>
-            <div class="div-inline">
+            <div class="div-inline" style="margin:0;">
                 <iframe width="240" height="200" src="//player.bilibili.com/player.html?aid=66255195&cid=114914717&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                 <!-- <embed src="http://player.youku.com/player.php/sid/XMTU1MTc5NDA5Mg==/v.swf" allowfullscreen="true" quality="high" width="240" height="200" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" > -->
             </div>
