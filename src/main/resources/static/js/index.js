@@ -28,13 +28,13 @@ function initIndexList(indexList){
         itemContainer.append(Child);
     });
     //appendix
-    for(var i=0;i<3;++i){
+    for(var i=0;i<3;++i){//注意此处补充的内容，很难调试
         var appendixContainer=$("#item"+i);
         appendixContainer.append("<div class='item-appendix'><ul id='ul_appendix_container"+i+"'></ul></div>");
         var itemAppendix=indexList.slice(2*i+3,2*i+5);
         var itemAppendixContainer=$("#ul_appendix_container"+i);
-        $.each(itemAppendix,function(index,value){
-            var child = "<li><a target='_blank' href='/findArticle?articleId="+value['articleId']+"&originalAuthor="+value['originalAuthor']+"'>"+value['articleTitle']+"</a></li>"
+        $.each(itemAppendix,function(index,value){//为了防止由于字数问题导致的放大后换行不一的问题，需要将其限定高度以及隐藏超出范围的文本
+            var child = "<li style="height: 60px; overflow: hidden;"><a target='_blank' href='/findArticle?articleId="+value['articleId']+"&originalAuthor="+value['originalAuthor']+"'>"+value['articleTitle']+"</a></li>"
             itemAppendixContainer.append(child);
         });
     }
